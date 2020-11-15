@@ -1,5 +1,6 @@
 package com.atguigu.config;
 
+import com.atguigu.bean.ColorFactoryBean;
 import com.atguigu.bean.Person;
 import com.atguigu.bean.color;
 import com.atguigu.bean.red;
@@ -75,4 +76,8 @@ public class MainConfig2 {
      * 		2）、要获取工厂Bean本身，我们需要给id前面加一个&
      * 			&colorFactoryBean
      */
+    @Bean
+    public ColorFactoryBean colorFactoryBean(){
+        return  new ColorFactoryBean();
+    }
 }
